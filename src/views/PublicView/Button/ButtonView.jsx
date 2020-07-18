@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import CustomBreadcrumb from '@/components/CustomBreadcrumb'
-import { Layout, Row, Col, Button, Divider, Icon } from 'antd'
+import { Layout, Row, Col, Button, Divider } from 'antd'
+import { Icon } from '@ant-design/compatible'
 import '@/style/view-style/button.scss'
 
 const ButtonGroup = Button.Group

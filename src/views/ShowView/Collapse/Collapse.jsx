@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomBreadcrumb from '@/components/CustomBreadcrumb'
-import { Layout, Divider, Row, Col, Collapse, Icon } from 'antd'
-
+import { Layout, Divider, Row, Col, Collapse } from 'antd'
+import { Icon } from '@ant-design/compatible'
 const { Panel } = Collapse
 
 const text = `

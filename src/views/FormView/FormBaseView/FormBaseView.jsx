@@ -8,7 +8,6 @@ import {
     Divider,
     Form,
     Button,
-    Icon,
     Input,
     InputNumber,
     Checkbox,
@@ -23,6 +22,7 @@ import {
     AutoComplete,
     message
 } from 'antd'
+import { Icon } from '@ant-design/compatible'
 import '@/style/view-style/form.scss'
 
 const { Option } = Select

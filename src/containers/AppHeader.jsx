@@ -1,11 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import { Menu, Dropdown, Icon, Layout, Avatar, Badge } from 'antd'
+import { Menu, Dropdown, Layout, Avatar, Badge } from 'antd'
+import { Icon } from '@ant-design/compatible'
+import { useSubstrate } from '../substrate-lib'
 
 const { Header } = Layout
 
 const AppHeader = props => {
     let { menuClick, avatar, menuToggle, loginOut } = props
+    const [accountAddress, setAccountAddress] = useState(null)
+    const { keyring } = useSubstrate()
+    // const keyringOptions = keyring.getPairs().map(account => ({
+    //     key: account.address,
+    //     value: account.address,
+    //     text: account.meta.name.toUpperCase(),
+    //     icon: 'user'
+    // }));
+    //
+    // const initialAddress =
+    //     keyringOptions.length > 0 ? keyringOptions[0].value : '';
+    //
+    // // Set the initial address
+    // useEffect(() => {
+    //     setAccountAddress(initialAddress);
+    // }, [setAccountAddress, initialAddress]);
+
+    console.log('accountAddress: ' + accountAddress)
+
     const menu = (
         <Menu>
             <Menu.ItemGroup title='用户设置'>
@@ -38,17 +59,17 @@ const AppHeader = props => {
             </div>
             <div className='right'>
                 <div className='mr15'>
-                    <a rel='noopener noreferrer' href='https://github.com/ltadpoles/react-admin' target='_blank'>
-                        <Icon type='github' style={{ color: '#000' }} />
+                    <a rel='noopener noreferrer' href='https://github.com/AmadeusGB/vpp' target='_blank'>
+                        <Icon type='github' style={{ color: '#000', fontSize: '18px' }} />
                     </a>
                 </div>
-                <div className='mr15'>
-                    <Badge dot={true} offset={[-2, 0]}>
-                        <a href='https://github.com/ltadpoles/react-admin' style={{ color: '#000' }}>
-                            <Icon type='bell' />
-                        </a>
-                    </Badge>
-                </div>
+                {/*<div className='mr15'>*/}
+                {/*    <Badge dot={true} offset={[-2, 0]}>*/}
+                {/*        <a href='https://github.com/AmadeusGB/vpp' style={{ color: '#000' }}>*/}
+                {/*            <Icon type='bell' />*/}
+                {/*        </a>*/}
+                {/*    </Badge>*/}
+                {/*</div>*/}
                 <div>
                     <Dropdown overlay={menu} overlayStyle={{ width: '20rem' }}>
                         <div className='ant-dropdown-link'>

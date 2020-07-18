@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Layout, Divider, Row, Col, Steps, Icon, Button, message } from 'antd'
+import { Layout, Divider, Row, Col, Steps, Button, message } from 'antd'
+import { Icon } from '@ant-design/compatible'
 import CustomBreadcrumb from '@/components/CustomBreadcrumb'
 import '@/style/view-style/step.scss'
 

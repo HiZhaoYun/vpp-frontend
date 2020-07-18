@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Layout, Row, Col, Upload, message, Button, Icon, Divider, Modal } from 'antd'
+import { Layout, Row, Col, Upload, message, Button, Divider, Modal } from 'antd'
+import { Icon } from '@ant-design/compatible'
 import CustomBreadcrumb from '@/components/CustomBreadcrumb'
 
 const { Dragger } = Upload

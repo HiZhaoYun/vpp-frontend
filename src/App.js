@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import loadable from './utils/loadable'
-import { Dimmer, Loader } from 'semantic-ui-react';
-import { SubstrateContextProvider, useSubstrate } from './substrate-lib';
+import { SubstrateContextProvider } from './substrate-lib'
 import 'animate.css'
 import './style/base.scss'
 import './style/App.scss'
@@ -15,30 +14,7 @@ const View404 = loadable(() => import(/* webpackChunkName: '404' */ './views/Oth
 const View500 = loadable(() => import(/* webpackChunkName: '500' */ './views/Others/500'))
 const Login = loadable(() => import(/* webpackChunkName: 'login' */ './views/Login'))
 
-
-function Main () {
-    const [accountAddress, setAccountAddress] = useState(null);
-    const { apiState, keyring, keyringState } = useSubstrate();
-    const accountPair =
-        accountAddress &&
-        keyringState === 'READY' &&
-        keyring.getPair(accountAddress);
-
-    const loader = text => (
-        <Dimmer active>
-            <Loader size='small'>{text}</Loader>
-        </Dimmer>
-    );
-
-    if (apiState === 'ERROR') return loader('Error connecting to the blockchain');
-    else if (apiState !== 'READY') return loader('Connecting to the blockchain');
-
-    if (keyringState !== 'READY') {
-        return loader(
-            "Loading accounts (please review any extension's authorization)"
-        );
-    }
-
+function Main() {
     return (
         <Router>
             <Switch>

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Layout, Divider, Menu, Dropdown, Icon, Row, Col, message, Button } from 'antd'
+import { Layout, Divider, Menu, Dropdown, Row, Col, message, Button } from 'antd'
+import { Icon } from '@ant-design/compatible'
 import CustomBreadcrumb from '@/components/CustomBreadcrumb'
 import '@/style/view-style/dropdown.scss'
 

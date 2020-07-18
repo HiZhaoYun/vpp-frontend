@@ -6,14 +6,14 @@ const menu = [
         auth: [1]
     },
     {
-        title: '通用',
+        title: '交易大厅',
         key: '/public',
         icon: 'appstore',
         auth: [1],
         subs: [{ title: '按钮', key: '/public/button', icon: '' }, { title: '图标', key: '/public/icon', icon: '' }]
     },
     {
-        title: '导航',
+        title: '合同管理',
         key: '/nav',
         icon: 'bulb',
         subs: [
@@ -23,7 +23,7 @@ const menu = [
         ]
     },
     {
-        title: '表单',
+        title: '身份管理',
         key: '/form',
         icon: 'form',
         subs: [
@@ -32,7 +32,7 @@ const menu = [
         ]
     },
     {
-        title: '展示',
+        title: '议会大厅',
         key: '/show',
         icon: 'pie-chart',
         subs: [
@@ -43,7 +43,7 @@ const menu = [
         ]
     },
     {
-        title: '其它',
+        title: '浏览器',
         key: '/others',
         icon: 'paper-clip',
         auth: [1],
@@ -56,19 +56,19 @@ const menu = [
             { title: '500', key: '/500', icon: '' }
         ]
     },
-    {
-        title: '多级导航',
-        key: '/one',
-        icon: 'bars',
-        subs: [
-            {
-                title: '二级',
-                key: '/one/two',
-                icon: '',
-                subs: [{ title: '三级', key: '/one/two/three', icon: '' }]
-            }
-        ]
-    },
+    // {
+    //     title: '多级导航',
+    //     key: '/one',
+    //     icon: 'bars',
+    //     subs: [
+    //         {
+    //             title: '二级',
+    //             key: '/one/two',
+    //             icon: '',
+    //             subs: [{ title: '三级', key: '/one/two/three', icon: '' }]
+    //         }
+    //     ]
+    // },
     {
         title: '关于',
         key: '/about',

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Layout, Divider, Icon, Tooltip } from 'antd'
+import { Layout, Divider, Tooltip } from 'antd'
+import { Icon } from '@ant-design/compatible'
 import CustomBreadcrumb from '@/components/CustomBreadcrumb'
 import '@/style/view-style/icon.scss'
 

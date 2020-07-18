@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CustomBreadcrumb from '@/components/CustomBreadcrumb'
-import { Layout, Divider, Row, Col, Tree, Input, Icon } from 'antd'
-
+import { Layout, Divider, Row, Col, Tree, Input } from 'antd'
+import { Icon } from '@ant-design/compatible'
 const { TreeNode } = Tree
 
 const treeData = [

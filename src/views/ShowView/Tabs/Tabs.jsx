@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CustomBreadcrumb from '@/components/CustomBreadcrumb'
-import { Layout, Divider, Row, Col, Tabs, Select, Icon, Radio, Button } from 'antd'
-
+import { Layout, Divider, Row, Col, Tabs, Select, Radio, Button } from 'antd'
+import { Icon } from '@ant-design/compatible'
 const { TabPane } = Tabs
 const { Option } = Select
 

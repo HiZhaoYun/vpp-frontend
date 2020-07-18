@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Layout, Divider, Row, Col, Icon, Menu, Button, Switch } from 'antd'
+import { Layout, Divider, Row, Col, Menu, Button, Switch } from 'antd'
+import { Icon } from '@ant-design/compatible'
 import CustomBreadcrumb from '@/components/CustomBreadcrumb'
 
 const { SubMenu } = Menu
